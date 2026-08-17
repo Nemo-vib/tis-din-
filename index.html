@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Birthday Countdown 💌</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="envelope-wrapper">
+
+            <div class="envelope" id="envelope">
+
+                <!-- Letter -->
+                <div class="letter">
+
+                    <h1>
+                        Congratulations mera pyara baccha 🫂❤️
+                    </h1>
+
+                    <p>
+                        Your special day is getting closer! 😁
+                    </p>
+
+                    <div class="countdown">
+                        🎂 Only 30 Days Left! 🎂
+                    </div>
+
+                    <p>
+                        Get ready for your birthday! 🥳😁
+                    </p>
+
+                </div>
+
+
+                <!-- Envelope Flap -->
+                <div class="flap"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Open / Close Button -->
+
+        <button class="open-btn" id="openBtn">
+            💌 Open Letter
+        </button>
+
+    </div>
+
+
+    <!-- Floating Hearts / Emojis -->
+
+    <div class="hearts">
+
+        <span class="heart" style="left: 5%; animation-duration: 6s; animation-delay: 0s;">
+            ❤️
+        </span>
+
+        <span class="heart" style="left: 15%; animation-duration: 8s; animation-delay: 2s;">
+            🥳
+        </span>
+
+        <span class="heart" style="left: 28%; animation-duration: 7s; animation-delay: 1s;">
+            💕
+        </span>
+
+        <span class="heart" style="left: 40%; animation-duration: 9s; animation-delay: 3s;">
+            🎊
+        </span>
+
+        <span class="heart" style="left: 55%; animation-duration: 6s; animation-delay: 1s;">
+            🫂
+        </span>
+
+        <span class="heart" style="left: 68%; animation-duration: 8s; animation-delay: 2s;">
+            💗
+        </span>
+
+        <span class="heart" style="left: 80%; animation-duration: 7s; animation-delay: 0s;">
+            💕
+        </span>
+
+        <span class="heart" style="left: 92%; animation-duration: 9s; animation-delay: 4s;">
+            🕺
+        </span>
+
+        <span class="heart" style="left: 35%; animation-duration: 10s; animation-delay: 4s;">
+            🎂
+        </span>
+
+    </div>
+
+
+    <script>
+
+        const envelope = document.getElementById("envelope");
+        const button = document.getElementById("openBtn");
+
+        let isOpen = false;
+
+        button.addEventListener("click", () => {
+
+            isOpen = !isOpen;
+
+            envelope.classList.toggle("open");
+
+            if (isOpen) {
+
+                button.innerHTML = "✉️ Close Letter";
+
+            } else {
+
+                button.innerHTML = "💌 Open Letter";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
